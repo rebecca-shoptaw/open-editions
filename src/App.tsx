@@ -1,5 +1,5 @@
 import Audiobook from "./components/Audiobook";
-import { useState } from "react";
+//import { useState } from "react";
 
 function App() {
   const books = [
@@ -42,11 +42,11 @@ function App() {
     },
   ];
 
-  const [book, selectBook] = useState(books[2]);
+  //const [book, selectBook] = useState(books[2]);
 
   return (
     <div>
-      <Audiobook book={book} />
+      <Audiobook book={books[2]} />
     </div>
   );
 }
