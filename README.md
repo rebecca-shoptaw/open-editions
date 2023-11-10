@@ -7,11 +7,19 @@ An aesthetically pleasing audiobook player designed to mimic the feeling of read
 
 [Live Site](https://rebeccashoptaw.dev/open-editions/).
 
+## Background & Mission
+As an avid reader with a visual memory, I often struggle with the generic and sometimes cluttered web interfaces of audiobook sites. I built the initial version of this site in a moment of desperation, when I was trying to listen to an audiobook of *The Count of Monte Cristo* and found myself wishing there was a way to listen that would look and feel less like a generic website and more like a physical edition of the book. 
+
+Once the first version was built, I realized that this could be a great site to expand and make public for three reasons:
+1. To make the audiobook experience more pleasant
+2. To highlight the amazing [Librivox catalog](https://librivox.org/) of public domain audiobooks
+3. To promote and make more accessible the reading of classic literature
+
 ## Features
 - **Customized cover images:** Classical paintings selected to represent book content; if no cover image selected, will implement randomized selection from a set of paintings
 - **Minimal mode**: Option to hide all unnecessary buttons and info and focus on the reading experience
 
-All audiobooks sourced from the [Librivox](https://librivox.org/) library free public domain audiobooks, hosted via [Archive.org](https://archive.org/)
+All audiobooks sourced from the [Librivox](https://librivox.org/) library of free public domain audiobooks, hosted via [Archive.org](https://archive.org/)
 
 
 ## Technologies Used
