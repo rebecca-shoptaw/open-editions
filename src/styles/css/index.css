@@ -3,6 +3,9 @@ body {
   background-blend-mode: multiply;
   font-family: "DM Sans", sans-serif;
 }
+* {
+  transition: all 0.5s;
+}
 
 .minimal h4,
 .minimal #more-info,
@@ -54,14 +57,14 @@ body {
   color: #bbb !important;
 }
 
-#header-left {
+#header-right {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
 }
 
-#header-left i {
+#header-right i {
   color: #ddd;
   transition: opacity 0.5s;
 }
@@ -82,8 +85,6 @@ i:hover {
 }
 
 #playlist {
-  width: 400px;
-  height: 400px;
   border-radius: 10px;
   border: 0.2px solid #ddd;
   opacity: 0.75;
@@ -134,10 +135,29 @@ a:hover {
   opacity: 0.75;
 }
 
-#footer-logo {
-  position: fixed;
-  bottom: 10px;
-  right: 15px;
-  height: 30px;
-  filter: invert(0.7);
+@media only screen and (max-width: 500px) {
+  #playlist,
+  #more-info {
+    width: 230px;
+  }
+
+  #playlist-box {
+    height: 80vh;
+    padding-top: 20vh;
+  }
+
+  #header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #book-title {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  #book-author {
+    margin-top: 10px;
+  }
 }

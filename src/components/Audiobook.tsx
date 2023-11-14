@@ -57,11 +57,16 @@ const Audiobook = ({ book }: bookProps) => {
           <ClipLoader color={"#ddd"} size={100} />
         </div>
       )}
-      <div id="header" className="d-flex flex-row justify-content-between">
-        <div id="right">
+      <header id="header" className="d-flex flex-row justify-content-between">
+        <div id="header-left" className="d-flex flex-column">
           <h3 id="book-title">{book.title}</h3>
+          <div id="info-box" className={`${!infoVis && "hidden"}`}>
+            <h4 id="book-author">
+              {book.author} <br></br> {book.pub_year}
+            </h4>
+          </div>
         </div>
-        <div id="header-left">
+        <div id="header-right">
           <i
             id="info-btn"
             className="bi bi-info-circle"
@@ -70,7 +75,7 @@ const Audiobook = ({ book }: bookProps) => {
           />
           <i
             id="minimal-btn"
-            className="bi bi-exclude"
+            className="bi bi-noise-reduction"
             title="Minimal Mode"
             onClick={() => toggle("minimal")}
           />
@@ -78,12 +83,8 @@ const Audiobook = ({ book }: bookProps) => {
             <i id="close-btn" className="bi bi-x" title="Close" />
           </a>
         </div>
-      </div>
-      <div id="info-box" className={`${!infoVis && "hidden"}`}>
-        <h4 id="book-author">
-          {book.author} <br></br> {book.pub_year}
-        </h4>
-      </div>
+      </header>
+
       <div
         id="playlist-box"
         className={`d-flex flex-column align-items-center justify-content-center ${
@@ -93,7 +94,7 @@ const Audiobook = ({ book }: bookProps) => {
         <iframe
           id="playlist"
           src={`https://archive.org/embed/${book.url}_librivox&playlist=1`}
-          width="500"
+          width="400"
           height="400"
           className={`${iframeLoad ? "loaded" : "unloaded"}`}
           onLoad={() => setIframeLoad(true)}
@@ -117,10 +118,6 @@ const Audiobook = ({ book }: bookProps) => {
             </a>{" "}
           </div>
         </div>
-        {/*<img
-          id="footer-logo"
-          src="https://cdn-icons-png.flaticon.com/256/864/864685.png"
-        />*/}
       </div>
     </div>
   );
