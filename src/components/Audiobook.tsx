@@ -106,9 +106,9 @@ const Audiobook = ({ book }: bookProps) => {
           }`}
         >
           <div>
-            Read by{" "}
-            <a href={book.reader_url} target="_blank" rel="noreferrer">
-              {book.reader}
+            Courtesy of{" "}
+            <a href={book.url} target="_blank" rel="noreferrer">
+              Librivox
             </a>{" "}
           </div>
           <div className="right">

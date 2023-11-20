@@ -3,6 +3,7 @@ body {
   background-blend-mode: multiply;
   font-family: "DM Sans", sans-serif;
 }
+
 * {
   transition: all 0.5s;
 }

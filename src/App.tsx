@@ -1,12 +1,17 @@
+import { useState } from "react";
 import Audiobook from "./components/Audiobook";
-import bookObjs from "./data/bookObjs";
+import Homepage from "./components/Homepage";
+import bookPresets from "./data/bookObjs";
 
 function App() {
-  const books = bookObjs.books;
+  const [listening, setListening] = useState(false);
+
+  const books = bookPresets;
 
   return (
     <>
-      <Audiobook book={books[2]} />
+      <Homepage />
+      {listening && <Audiobook book={books.Middlemarch} />}
     </>
   );
 }

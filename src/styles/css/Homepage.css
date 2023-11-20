@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  color: #ddd;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./OpenEditions_Homepage.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 5% 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  background-image: url(./OpenEditions_Homepage.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 5% 100%;
+  background-color: #aaa;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2px;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header h2 {
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#search-bar {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#search-bar:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+main {
+  background-color: #000000aa;
+  height: 70vh;
+  padding-top: 30vh;
+}
