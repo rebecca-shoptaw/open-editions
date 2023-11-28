@@ -1,0 +1,35 @@
+@use "../templates/colors" as *;
+@use "../templates/fonts" as *;
+@use "../templates/mixins" as *;
+@import "../base";
+
+.minimal {
+  h4,
+  #more-info,
+  #book-title,
+  #info-box,
+  .bi-info-circle {
+    @include hidden;
+  }
+
+  #header {
+    border-bottom: 0.5px solid #dddddd00;
+  }
+
+  #minimal-btn {
+    opacity: 0.9;
+  }
+}
+
+.hidden {
+  @include hidden;
+}
+
+#book-title {
+  font-size: 20px;
+}
+
+#book-author {
+  font-size: 14px;
+  color: #bbb;
+}

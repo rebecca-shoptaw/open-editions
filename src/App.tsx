@@ -4,14 +4,14 @@ import Homepage from "./components/Homepage";
 import bookPresets from "./data/bookObjs";
 
 function App() {
-  const [listening, setListening] = useState(false);
+  const [listening, setListening] = useState(true);
 
   const books = bookPresets;
 
   return (
     <>
-      <Homepage />
-      {listening && <Audiobook book={books.Middlemarch} />}
+      {!listening && <Homepage />}
+      {listening && <Audiobook book={books["The Red and The Black"]} />}
     </>
   );
 }

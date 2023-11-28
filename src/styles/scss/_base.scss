@@ -1,0 +1,30 @@
+@use "./templates/colors" as *;
+@use "./templates/fonts" as *;
+@use "./templates/mixins" as *;
+
+* {
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  background-blend-mode: multiply;
+  font-family: $primary-font-stack;
+}
+
+header {
+  position: fixed;
+  width: 90%;
+  margin: 0 5%;
+  padding: 20px 5px 0px 0px;
+  border-bottom: 0.5px solid $off-white;
+  color: $off-white;
+}
+
+#info-box {
+  position: fixed;
+  top: 60px;
+  left: 5%;
+  text-align: left;
+}

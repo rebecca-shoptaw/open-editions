@@ -1,62 +1,6 @@
-body {
-  background-color: #aaa;
-  background-blend-mode: multiply;
-  font-family: "DM Sans", sans-serif;
-}
+@import "base";
+@import "./views/bookpage";
 
-* {
-  transition: all 0.5s;
-}
-
-.minimal h4,
-.minimal #more-info,
-.minimal #book-title,
-.minimal #info-box,
-.minimal .bi-info-circle,
-#info-box.hidden {
-  opacity: 0 !important;
-}
-
-#header,
-#playlist,
-#more-info,
-#info-box {
-  transition: opacity 0.5s;
-}
-
-.minimal #header {
-  border-bottom: 0.5px solid #dddddd00;
-}
-
-.minimal #minimal-btn {
-  opacity: 0.9;
-}
-
-#header {
-  position: fixed;
-  width: 90%;
-  margin: 0 5%;
-  padding: 20px 5px 0px 0px;
-  border-bottom: 0.5px solid #ddd;
-  color: #ddd;
-}
-
-#book-title {
-  font-size: 20px;
-}
-
-#info-box {
-  position: fixed;
-  top: 60px;
-  left: 5%;
-  text-align: left;
-}
-
-#book-author {
-  font-size: 14px !important;
-  font-weight: 100 !important;
-  color: #bbb !important;
-}
 
 #header-right {
   display: flex;
