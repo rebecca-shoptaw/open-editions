@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   transition: all 0.5s;
   box-sizing: border-box;
@@ -148,11 +152,14 @@ i:hover {
 }
 
 a {
+  color: #ccc;
   text-decoration: underline;
   transition: text-decoration-color 0.2s;
 }
 
 a:hover {
+  cursor: pointer;
+  color: #ccc;
   text-decoration: underline rgba(255, 255, 255, 0);
   opacity: 0.75;
 }

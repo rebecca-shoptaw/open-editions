@@ -12,34 +12,35 @@ body {
   background-position: 5% 100%;
 }
 
-header {
-  width: 100%;
+#homepage-header {
+  width: 90%;
   position: fixed;
   padding: 20px;
-  background-image: url(./OpenEditions_Homepage.jpg);
-  background-size: 100%;
-  background-attachment: fixed;
-  background-position: 5% 100%;
-  background-color: #aaa;
-  background-blend-mode: multiply;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding-bottom: 2px;
+  background-color: #aaa;
+  background-image: url(./OpenEditions_Homepage.jpg);
+  background-blend-mode: multiply;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 5% 100%;
+  z-index: 1;
 }
 
-header h1 {
+#homepage-header h1 {
   font-size: 30px;
 }
 
-header h2 {
+#homepage-header h2 {
   font-size: 18px;
   margin-top: -5px;
 }
 
-nav {
+#homepage-nav {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -51,14 +52,189 @@ nav {
   border-bottom: 1px solid #ddd;
 }
 
+#search-bar::placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+
 #search-bar:focus {
   outline: none;
   border: none;
   border-bottom: 1px solid #ddd;
 }
 
-main {
+#homepage-main {
+  padding-top: 70px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30vh;
+}
+
+.homepage-section {
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
   background-color: #000000aa;
-  height: 70vh;
-  padding-top: 30vh;
+}
+
+.section-heading {
+  font-size: 25px;
+  border-bottom: 1px solid #888;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#about {
+  padding-bottom: 40px;
+}
+
+#about .listen-button {
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+
+.listen-button:focus {
+  outline: #fff;
+}
+
+#about .section-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+#features-list {
+  width: 70%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.feature-item {
+  background-color: transparent;
+  border-color: #888;
+}
+
+#featured-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.featured-book {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.featured-book-cover {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+.featured-book:hover {
+  background-color: #000000aa;
+}
+
+.featured-book:hover .featured-book-cover,
+.featured-book:hover .featured-book-title {
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.featured-book-info {
+  margin-top: -20px;
+  color: #888;
+}
+
+.featured-book-pubyear {
+  font-size: 13px;
+}
+
+.listen-button {
+  margin-top: auto;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #888;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.listen-button:hover,
+.featured-book:hover .listen-button {
+  filter: brightness(1.5);
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-text {
+  text-align: center;
+}
+
+.important-section-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+#homepage-footer p {
+  color: #ccc;
+}
+
+#homepage-footer a,
+#homepage-main a {
+  text-decoration: underline 0.5px #ffffff00;
+  color: #eee;
+}
+
+#homepage-footer a:hover,
+#homepage-main a:hover {
+  filter: brightness(1.5);
+  opacity: 1;
+}
+
+#homepage-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: calc(-30vh - 10px);
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+.homepage-footer-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 0px;
+}
+
+#homepage-portfolio-link {
+  margin-top: -20px;
+}
+
+.hp-anchor {
+  height: 0px;
+  width: 100%;
+  margin-top: -70px;
+  padding-bottom: 70px;
+}
+
+#search {
+  margin-top: 40px;
+  padding-bottom: 20px;
 }
