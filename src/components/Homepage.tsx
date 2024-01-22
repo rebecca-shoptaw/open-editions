@@ -1,5 +1,6 @@
 import "../styles/css/Homepage.css";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import Search from "./Search";
 import About from "./About";
 import Featured from "./Featured";
@@ -18,6 +19,9 @@ const Homepage = (props: HomepageProps) => {
 
   return (
     <section id="hp-body">
+      <Helmet>
+        <title>Open Editions | A new way to listen.</title>
+      </Helmet>
       <header id="homepage-header">
         <div id="site-title">
           <h1>Open Editions</h1>
