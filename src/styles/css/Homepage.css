@@ -6,7 +6,7 @@
 #hp-body {
   background-color: #aaa;
   background-blend-mode: multiply;
-  background-image: url(./OpenEditions_Homepage.jpg);
+  background-image: url("/OpenEditions_Homepage.jpg");
   background-size: 100%;
   background-attachment: fixed;
   background-position: 5% 100%;
@@ -239,7 +239,7 @@
   padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   #hp-body,
   #homepage-header {
     background-size: 170% !important;
