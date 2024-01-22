@@ -28,7 +28,8 @@ All audiobooks sourced from the [Librivox](https://librivox.org/) library of fre
 - [![CSS][CSS-icon]][CSS-url]
 
 ## Next Steps
-- [ ] Build homepage and search functionality using the [Librivox API](https://librivox.org/api/info)
+- [x] Build starter homepage to navigate between current titles
+- [ ] Search functionality using the [Librivox API](https://librivox.org/api/info)
 - [ ] Create simple data storage system to link API data to cover image link and sizing info
 - [ ] Create "back of book" view to display more detailed book info without interrupting audio play
 
