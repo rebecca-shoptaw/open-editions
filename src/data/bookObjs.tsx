@@ -1,6 +1,7 @@
-const bookPresets = {
+export const books = {
   "The Count of Monte Cristo": {
     id: [47, 1259],
+    title: "The Count of Monte Cristo",
     author: "Alexandre Dumas",
     pub_year: 1844,
     url: "count_montecristo_1308",
@@ -23,7 +24,7 @@ const bookPresets = {
     reader: "Margaret Espaillat",
     reader_url: "https://librivox.org/reader/4064",
   },
-  "The Red and The Black": {
+  "The Red and the Black": {
     title: "The Red and the Black - Volume 1",
     author: "Stendhal",
     pub_year: 1830,
@@ -36,6 +37,16 @@ const bookPresets = {
     reader_url:
       "https://librivox.org/the-red-and-the-black-volume-i-by-stendhal/",
   },
+  "Madame Bovary": {
+    title: "Madame Bovary",
+    author: "Gustave Flaubert",
+    pub_year: 1856,
+    url: "madame_bovary_ver2_2111",
+    cover:
+      "https://stylessedblog.files.wordpress.com/2019/08/leybold_portrait_of_a_young_lady_1824.jpg?w=953",
+    cover_size: "100vw",
+    cover_position: "2.6% 0.6%",
+    reader: "Peter Dann",
+    reader_url: "https://librivox.org/reader/15664",
+  },
 };
-
-export default bookPresets;
