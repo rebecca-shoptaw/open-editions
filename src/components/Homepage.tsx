@@ -17,6 +17,13 @@ const Homepage = (props: HomepageProps) => {
     scrollToElement("search-anchor");
   };
 
+  const handleClearInput = () => {
+    let search = document.getElementById("search-bar") as HTMLInputElement;
+    if (search) search.value = "";
+    search.focus();
+    setSearchTerm("");
+  };
+
   return (
     <section id="hp-body">
       <Helmet>
@@ -35,10 +42,26 @@ const Homepage = (props: HomepageProps) => {
             placeholder="Search for a book..."
             autoFocus
           />
-          <i className="bi bi-search" />
+          <i className="bi bi-x-lg" onClick={handleClearInput} />
+          <i
+            className="bi bi-search"
+            onClick={() => scrollToElement("search-anchor")}
+          />
         </nav>
       </header>
       <main id="homepage-main">
+        <section id="banner">
+          <section id="banner-content">
+            <h3>A new way to listen.</h3>
+            <button
+              className="listen-button"
+              onClick={() => scrollToElement("about-anchor")}
+            >
+              Begin
+            </button>
+          </section>
+        </section>
+        <Anchor id="about" />
         <About />
         <Anchor id="featured" />
         <Featured {...props} />

@@ -71,6 +71,17 @@
   padding-bottom: 30vh;
 }
 
+#banner {
+  width: 100%;
+  height: 100vh;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .homepage-section {
   width: 100%;
   margin: 20px 0;
