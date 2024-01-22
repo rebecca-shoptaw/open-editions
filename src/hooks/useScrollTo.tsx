@@ -6,7 +6,7 @@ export const useScrollTo = () => {
 
   const resetUrl = () => {
     setTimeout(() => {
-      window.history.pushState({}, "", "/");
+      window.history.pushState({}, "", "/open-editions/");
     });
   };
 
