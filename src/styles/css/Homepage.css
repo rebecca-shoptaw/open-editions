@@ -165,8 +165,9 @@
 }
 
 .featured-book-info {
-  margin-top: -20px;
+  margin-top: -10px;
   color: #888;
+  line-height: 1em;
 }
 
 .featured-book-pubyear {

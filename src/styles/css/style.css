@@ -79,6 +79,7 @@ header {
 }
 
 #book-author {
+  margin-top: 5px;
   font-size: 14px;
   color: #bbb;
 }
