@@ -49,4 +49,15 @@ export const books = {
     reader: "Peter Dann",
     reader_url: "https://librivox.org/reader/15664",
   },
+  "Vanity Fair": {
+    title: "Vanity Fair",
+    author: "William Makepeace Thackeray",
+    pub_year: 1848,
+    url: "vanityfair_version2_1704",
+    cover: "https://images.metmuseum.org/CRDImages/ep/original/DT235903.jpg",
+    cover_size: "150vw",
+    cover_position: "60% 70%",
+    reader: "Helen Taylor",
+    reader_url: "https://librivox.org/reader/9136",
+  },
 };
