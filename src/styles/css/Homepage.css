@@ -4,6 +4,8 @@
 }
 
 #hp-body {
+  background-color: #aaa;
+  background-blend-mode: multiply;
   background-image: url(./OpenEditions_Homepage.jpg);
   background-size: 100%;
   background-attachment: fixed;

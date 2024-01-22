@@ -17,7 +17,7 @@ const Homepage = (props: HomepageProps) => {
   };
 
   return (
-    <body id="hp-body">
+    <section id="hp-body">
       <header id="homepage-header">
         <div id="site-title">
           <h1>Open Editions</h1>
@@ -63,7 +63,7 @@ const Homepage = (props: HomepageProps) => {
           </a>
         </section>
       </footer>
-    </body>
+    </section>
   );
 };
 
