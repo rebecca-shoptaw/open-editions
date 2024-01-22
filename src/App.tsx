@@ -1,17 +1,23 @@
-import { useState } from "react";
 import Audiobook from "./components/Audiobook";
 import Homepage from "./components/Homepage";
-import bookPresets from "./data/bookObjs";
+import { useActiveBook } from "./hooks/useActiveBook";
+import { useListeningStatus } from "./hooks/useListeningStatus";
 
 function App() {
-  const [listening, setListening] = useState(true);
-
-  const books = bookPresets;
+  const { activeBook, setActiveBook } = useActiveBook();
+  const { listening, startListening, stopListening } = useListeningStatus();
 
   return (
     <>
-      {!listening && <Homepage />}
-      {listening && <Audiobook book={books["The Red and The Black"]} />}
+      {!listening && (
+        <Homepage
+          setActiveBook={setActiveBook}
+          startListening={startListening}
+        />
+      )}
+      {listening && (
+        <Audiobook book={activeBook} stopListening={stopListening} />
+      )}
     </>
   );
 }

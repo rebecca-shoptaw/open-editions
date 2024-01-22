@@ -1,22 +1,9 @@
 import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import { Helmet } from "react-helmet";
+import { AudiobookPageProps } from "../types/types";
 
-type bookProps = {
-  book: {
-    title: string;
-    author: string;
-    pub_year: number;
-    url: string;
-    cover: string;
-    cover_size: string;
-    cover_position: string;
-    reader: string;
-    reader_url: string;
-  };
-};
-
-const Audiobook = ({ book }: bookProps) => {
+const Audiobook = ({ book, stopListening }: AudiobookPageProps) => {
   const [iframeLoad, setIframeLoad] = useState(false);
   const [minimal, setMinimal] = useState(false);
   const [infoVis, setInfoVis] = useState(true);
@@ -24,7 +11,12 @@ const Audiobook = ({ book }: bookProps) => {
   const portfolio_link = "https://rebecca-shoptaw.github.io/";
 
   document.body.style.backgroundImage = `url(${book.cover})`;
-  document.body.style.backgroundSize = book.cover_size;
+
+  if (book.cover_size) {
+    document.body.style.backgroundSize = book.cover_size;
+  } else {
+    document.body.style.backgroundSize = "100%";
+  }
 
   if (book.cover_position) {
     document.body.style.backgroundPosition = book.cover_position;
@@ -79,9 +71,13 @@ const Audiobook = ({ book }: bookProps) => {
             title="Minimal Mode"
             onClick={() => toggle("minimal")}
           />
-          <a href={portfolio_link}>
-            <i id="close-btn" className="bi bi-x" title="Close" />
-          </a>
+
+          <i
+            id="close-btn"
+            className="bi bi-x"
+            title="Close"
+            onClick={stopListening}
+          />
         </div>
       </header>
 
@@ -107,7 +103,7 @@ const Audiobook = ({ book }: bookProps) => {
         >
           <div>
             Courtesy of{" "}
-            <a href={book.url} target="_blank" rel="noreferrer">
+            <a href={"https://librivox.org/"} target="_blank" rel="noreferrer">
               Librivox
             </a>{" "}
           </div>
