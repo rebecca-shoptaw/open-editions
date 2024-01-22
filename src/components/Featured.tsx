@@ -9,6 +9,7 @@ const Featured = (props: HomepageProps) => {
       <section id="featured-box">
         {Object.values(books).map((book) => (
           <FeaturedBook
+            key={book.title}
             book={book}
             setActiveBook={props.setActiveBook}
             startListening={props.startListening}

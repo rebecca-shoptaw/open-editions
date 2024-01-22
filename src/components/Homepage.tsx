@@ -9,19 +9,15 @@ import { useScrollTo } from "../hooks/useScrollTo";
 
 const Homepage = (props: HomepageProps) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const {scrollToElement} = useScrollTo();
+  const { scrollToElement } = useScrollTo();
 
-  const handleSearchInput = (e:React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearchInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
-    scrollToElement('search-anchor');
-  }
-
-  document.body.style.backgroundImage = `url(./OpenEditions_Homepage.jpg)`;
-  document.body.style.backgroundPosition = `5% 100%`;
-  document.body.style.backgroundSize = "100%";
+    scrollToElement("search-anchor");
+  };
 
   return (
-    <>
+    <body id="hp-body">
       <header id="homepage-header">
         <div id="site-title">
           <h1>Open Editions</h1>
@@ -50,10 +46,7 @@ const Homepage = (props: HomepageProps) => {
         <section className="homepage-footer-left">
           <p>
             Powered by{" "}
-            <a
-              href="https://librivox.org/"
-              target="_blank"
-            >
+            <a href="https://librivox.org/" target="_blank">
               Librivox
             </a>
             .
@@ -70,7 +63,7 @@ const Homepage = (props: HomepageProps) => {
           </a>
         </section>
       </footer>
-    </>
+    </body>
   );
 };
 

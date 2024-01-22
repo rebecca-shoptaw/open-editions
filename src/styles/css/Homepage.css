@@ -3,13 +3,12 @@
   color: #ddd;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+#hp-body {
   background-image: url(./OpenEditions_Homepage.jpg);
   background-size: 100%;
   background-attachment: fixed;
   background-position: 5% 100%;
+  padding-bottom: 30vh;
 }
 
 #homepage-header {
@@ -236,4 +235,41 @@ body {
 
 #search {
   padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  #hp-body,
+  #homepage-header {
+    background-size: 170% !important;
+    background-position: 50% 100% !important;
+  }
+
+  body {
+    background-size: 170% !important;
+  }
+
+  #homepage-main {
+    padding-top: 115px !important;
+  }
+
+  .hp-anchor {
+    margin-top: -115px !important;
+    padding-bottom: 115px !important;
+  }
+
+  #homepage-header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #about .section-text {
+    width: 100%;
+  }
+
+  #about .list-group {
+    width: 90%;
+    text-align: center;
+  }
 }
