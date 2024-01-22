@@ -5,9 +5,16 @@ import About from "./About";
 import Featured from "./Featured";
 import Anchor from "./Anchor";
 import { HomepageProps } from "../types/types";
+import { useScrollTo } from "../hooks/useScrollTo";
 
 const Homepage = (props: HomepageProps) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const {scrollToElement} = useScrollTo();
+
+  const handleSearchInput = (e:React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+    scrollToElement('search-anchor');
+  }
 
   document.body.style.backgroundImage = `url(./OpenEditions_Homepage.jpg)`;
   document.body.style.backgroundPosition = `5% 100%`;
@@ -24,7 +31,7 @@ const Homepage = (props: HomepageProps) => {
           <input
             id="search-bar"
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={handleSearchInput}
             placeholder="Search for a book..."
             autoFocus
           />
@@ -35,6 +42,7 @@ const Homepage = (props: HomepageProps) => {
         <About />
         <Anchor id="featured" />
         <Featured {...props} />
+        <Anchor id="search" />
         <Search term={searchTerm} />
         <section id="contact"></section>
       </main>
