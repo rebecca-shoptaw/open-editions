@@ -24,7 +24,7 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 2px;
   background-color: #aaa;
-  background-image: url(./OpenEditions_Homepage.jpg);
+  background-image: url("/OpenEditions_Homepage.jpg");
   background-blend-mode: multiply;
   background-size: 100%;
   background-attachment: fixed;
