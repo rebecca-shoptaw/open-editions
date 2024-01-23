@@ -4,10 +4,9 @@ An aesthetically pleasing audiobook player designed to mimic the feeling of read
 
 <a href="https://rebeccashoptaw.dev/open-editions/" target="_blank"><button onClick="https://rebeccashoptaw.dev/open-editions/" target="_blank">Live Site</button></a>
 
-<img width="350px" alt="Open Editions Homepage" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_Homepage.png">
-<img width="350px" alt="Listen Page - The Red and The Black" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_RedBlack.png">
-<img width="350px" alt="Listen Page - Middlemarch" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_Middlemarch.png">
-<img width="350px" alt="Listen Page - The Count of MonteCristo" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_MonteCristo.png">
+<img width="1440px" alt="Open Editions Homepage" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_Homepage.png">
+<img width="1440px" alt="Listen Page - The Red and The Black" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_RedBlack.png">
+<img width="1440px" alt="Listen Page - Middlemarch" src="https://github.com/rebecca-shoptaw/open-editions/blob/master/src/assets/OpenEditions_Middlemarch.png">
 
 ## Background & Mission
 
