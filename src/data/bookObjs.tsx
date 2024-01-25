@@ -1,7 +1,7 @@
 export const books = {
-  "The Count of Monte Cristo": {
-    id: [47, 1259],
+  6697: {
     title: "The Count of Monte Cristo",
+    id: 6697,
     author: "Alexandre Dumas",
     pub_year: 1844,
     url: "count_montecristo_1308",
@@ -12,8 +12,9 @@ export const books = {
     reader: "David Clarke",
     reader_url: "https://librivox.org/reader/7408",
   },
-  Middlemarch: {
+6584: {
     title: "Middlemarch",
+    id: 6584,
     author: "George Eliot",
     pub_year: 1871,
     url: "middlemarch_version2_1310",
@@ -24,8 +25,9 @@ export const books = {
     reader: "Margaret Espaillat",
     reader_url: "https://librivox.org/reader/4064",
   },
-  "The Red and the Black": {
+  5902: {
     title: "The Red and the Black - Volume 1",
+    id: 5902,
     author: "Stendhal",
     pub_year: 1830,
     url: "red_black_v1_1206",
@@ -37,8 +39,9 @@ export const books = {
     reader_url:
       "https://librivox.org/the-red-and-the-black-volume-i-by-stendhal/",
   },
-  "Madame Bovary": {
+  17229: {
     title: "Madame Bovary",
+    id: 17229,
     author: "Gustave Flaubert",
     pub_year: 1856,
     url: "madame_bovary_ver2_2111",
@@ -49,8 +52,9 @@ export const books = {
     reader: "Peter Dann",
     reader_url: "https://librivox.org/reader/15664",
   },
-  "Vanity Fair": {
+  11325: {
     title: "Vanity Fair",
+    id: 11325,
     author: "William Makepeace Thackeray",
     pub_year: 1848,
     url: "vanityfair_version2_1704",
