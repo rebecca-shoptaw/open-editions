@@ -27,25 +27,23 @@ All audiobooks sourced from the [Librivox](https://librivox.org/) library of fre
 
 ## Built With
 
-- [![React][React-icon]][React-url]
-- [![Vite][Vite-icon]][Vite-url]
-- [![Typescript][TS-icon]][TS-url]
-- [![HTML][HTML-icon]][HTML-url]
-- [![CSS][CSS-icon]][CSS-url]
+[![React][React-icon]][React-url] [![Vite][Vite-icon]][Vite-url] [![Typescript][TS-icon]][TS-url] [![HTML][HTML-icon]][HTML-url] [![CSS][CSS-icon]][CSS-url]
 
 ## Next Steps
 
 - [x] Build starter homepage to navigate between current titles
+- [ ] Switch to [Art Institute of Chicago API](https://api.artic.edu/) to retrieve cover images
+- [ ] Build new cover image data structure & associated functions
+- [ ] Search functionality using the [Librivox API](https://librivox.org/api/info)
 - [ ] Migrate styling from CSS -> SASS
 - [ ] Begin building animations with GSAP
-- [ ] Search functionality using the [Librivox API](https://librivox.org/api/info)
-- [ ] Create simple data storage system to link API data to cover image link and sizing info
 
 ## Long-term Goals
 
 - [ ] Use Librivox RSS feed to rebuild player from scratch
 - [ ] Create bookmark functionality using `localStorage` to save user's place
-- [ ] Create "back of book" view to display more detailed book info without interrupting audio play
+- [ ] Create "back of book" view to display more detailed book info (and cover credits) without interrupting audio play
+- [ ] Enable user-submitted cover suggestions
 - [ ] Transfer site from GitHub pages to Vercel or AWS, with a separate custom domain
 - [ ] Work with a team to create a backend to allow for account login and features like saving progress, creating TBR and favorites lists, and accessing reading history
 
