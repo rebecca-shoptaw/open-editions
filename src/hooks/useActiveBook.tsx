@@ -4,7 +4,7 @@ import { BookProps } from "../types/types";
 
 export const useActiveBook = () => {
   const [activeBook, setActiveBook] = useState<BookProps>(
-    books["The Count of Monte Cristo"]
+    books[6697]
   );
   return { activeBook, setActiveBook };
 };

@@ -1,6 +1,6 @@
 export type BookProps = {
-  id?: number[];
   title: string;
+  id: number;
   author: string;
   pub_year: number;
   url: string;
