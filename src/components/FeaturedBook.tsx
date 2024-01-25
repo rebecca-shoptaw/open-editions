@@ -13,6 +13,7 @@ const FeaturedBook = (props: FeaturedBookProps) => {
       <img
         src={book.cover}
         className="featured-book-cover"
+        loading="lazy"
         onClick={handleSelection}
       />
       <section className="featured-book-credits">
