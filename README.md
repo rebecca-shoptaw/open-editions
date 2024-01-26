@@ -42,6 +42,7 @@ All audiobooks sourced from the [Librivox](https://librivox.org/) library of fre
 
 - [ ] Use Librivox RSS feed to rebuild player from scratch
 - [ ] Create bookmark functionality using `localStorage` to save user's place
+- [ ] Build and release mobile app version using `React Native`
 - [ ] Create "back of book" view to display more detailed book info (and cover credits) without interrupting audio play
 - [ ] Enable user-submitted cover suggestions
 - [ ] Transfer site from GitHub pages to Vercel or AWS, with a separate custom domain
